@@ -849,7 +849,7 @@ async function get_neighbour_epc_data() {
     let select = document.getElementById('input-neighbour-address');
     let certificate = select.options[select.selectedIndex].value;
     // const full_url = `${epc_api_url}?certificate=${certificate}`;
-    const full_url = `/.netlify/functions/get_certificate_data?certificate=${selected_certificate}`;
+    const full_url = `/.netlify/functions/get_certificate_data?certificate=${certificate}`;
 
     try {
         const response = await fetch(full_url);
