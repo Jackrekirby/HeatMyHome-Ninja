@@ -1,0 +1,140 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HeatMyHome | Documentation</title>
+  </head>
+  <body>
+    <nav class="flex">
+      <div class="max-width flex row">
+        <div>
+          <a href="./">
+            <img src="./images/logo3.svg" alt="HeatMyHome" />
+          </a>
+        </div>
+        <div class="title">HeatMyHome</div>
+        <div class="mobile title">Documentation</div>
+        <div id="nav-menu" class="flex row">
+          <a class="text" href="./">Home</a>
+          <a class="text" href="./about-us.html">About Us</a>
+          <a class="text" href="./education.html">Education</a>
+          <a class="text" href="./documentation.html">Documentation</a>
+          <a href="./simulate.html" class="button">Simulate</a>
+        </div>
+        <div id="nav-toggle" class="flex" onclick="toggle_nav_menu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-buffer"></div>
+    <main class="flex education-main">
+      <img id="edu-bg-img" src="./images/documentation1.svg" alt="" />
+      <div class="max-width flex row wrap">
+        <div class="card a96 flex column">
+          <!-- <div class="img">inputs</div> -->
+          <img src="./images/SimInput.svg" class="med" alt="" />
+          <h2>
+            Simulator<br />
+            Inputs
+          </h2>
+          <p>
+            Learn about what each of the simulator inputs are, and
+            how they are used to determine your optimal heating system.
+          </p>
+          <a href="./documentation/simulator-inputs.html">Read more</a>
+        </div>
+        <div class="card a96 flex column">
+          <!-- <div class="img">outputs</div> -->
+          <img src="./images/SimOutput.svg" class="med" alt="" />
+          <h2>
+            Simulator<br />
+            Outputs
+          </h2>
+          <p>
+            Learn about what data the simulator outputs, and how you can
+            use it to inform your choice of heating system.
+          </p>
+          <a href="./documentation/simulator-outputs.html">Read more</a>
+        </div>
+        <div class="card a96 flex column">
+          <!-- <div class="img">how-it-works</div> -->
+          <img src="./images/HowitWorks.svg" class="med" alt="" />
+          <h2>
+            Simulator<br />
+            How-It-Works
+          </h2>
+          <p>
+            Learn about how the simulator determines the optimal heating systems
+            for your home.
+          </p>
+          <a href="./documentation/simulator-how-it-works.html">Read more</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="flex column">
+      <div class="footer-contents flex row wrap">
+        <div class="flex column box">
+          <h2>Help Us Improve</h2>
+          <p>
+            Provide feedback using
+            <a
+              class="underline"
+              href="https://forms.gle/EKuwcEMXcXaRvBM99"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Google Forms</a
+            >
+          </p>
+        </div>
+        <div class="flex column box">
+          <img src="./images/logo3.svg" />
+        </div>
+        <div class="flex column box">
+          <h2>Contact Us</h2>
+          <a
+            href="mailto:heatmyhome.ninja@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >heatmyhome.ninja@gmail.com</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggle_nav_menu() {
+        console.log("toggle nav menu");
+        let menu = document.getElementById("nav-menu");
+        let toggle = document.getElementById("nav-toggle");
+        if (menu.classList.contains("open")) {
+          for (let div of menu.getElementsByTagName("a")) {
+            div.classList.remove("open");
+            div.classList.add("close");
+          }
+          menu.classList.remove("open");
+          menu.classList.add("close");
+          toggle.classList.remove("open");
+        } else {
+          for (let div of menu.getElementsByTagName("a")) {
+            div.classList.add("open");
+            div.classList.remove("close");
+          }
+          menu.classList.add("open");
+          menu.classList.remove("close");
+          toggle.classList.add("open");
+        }
+      }
+
+      document
+        .getElementById("nav-menu")
+        .getElementsByTagName("a")[3]
+        .classList.add("showing");
+    </script>
+  </body>
+</html>
