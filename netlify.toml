@@ -1,0 +1,5 @@
+[functions]
+    node_bundler = "esbuild"
+
+[functions."simulate"]
+  included_files = ["rust-assets/**", "pkg/**"]

@@ -18690,7 +18690,7 @@ var { merge: merge2 } = static_exports;
 var { parseHTML: parseHTML2 } = static_exports;
 var { root: root2 } = static_exports;
 
-// netlify/functions/get_addresses.mjs
+// netlify/functions/get_addresses.js
 async function get_addresses({ postcode: postcode2 }) {
   const url = `https://find-energy-certificate.service.gov.uk/find-a-certificate/search-by-postcode?postcode=${postcode2.replace(" ", "+")}`;
   const address_link_list = [];

@@ -91,7 +91,8 @@ function toggle_nav_menu() {
 // let api_url = 'https://customapi.heatmyhome.ninja';
 let api_url = 'https://customapi.heatmyhome.ninja';
 let epc_api_url = api_url + '/epc';
-let simulate_api_url = api_url + '/simulate';
+// let simulate_api_url = api_url + '/simulate';
+let simulate_api_url = './.netlify/functions/simulate';
 let submit_status = false;
 
 const input_ranges = { // MIN, MAX, MULTIPLIER
@@ -624,7 +625,7 @@ async function submit_simulation_server() {
     try {
         const response = await fetch(simulator_api_full_url);
         const json = await response.json();
-        if (json['status'] == 200) {
+        if (response.status == 200) {
             console.log('simulator-api-json:', json);
             unhide_ids(['submit-complete']);
             hide_ids(['guide']);

@@ -18690,7 +18690,7 @@ var { merge: merge2 } = static_exports;
 var { parseHTML: parseHTML2 } = static_exports;
 var { root: root2 } = static_exports;
 
-// netlify/functions/get_certificate_data.mjs
+// netlify/functions/get_certificate_data.js
 async function get_data_from_certificate({ certificate: certificate2 }) {
   const url = "https://find-energy-certificate.service.gov.uk/energy-certificate/" + certificate2;
   const response = await fetch(url);
