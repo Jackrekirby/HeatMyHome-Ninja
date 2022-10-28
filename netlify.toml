@@ -1,5 +1,6 @@
 [functions]
     node_bundler = "esbuild"
+    external_node_modules = ["web-worker"]
 
-[functions."simulate"]
+[functions.simulate]
   included_files = ["rust-assets/**", "pkg/**"]
