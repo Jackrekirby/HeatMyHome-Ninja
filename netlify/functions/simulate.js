@@ -1,4 +1,7 @@
 import Worker from 'web-worker';
+// import rust_simulator from 'rust_simulator'
+
+// console.log(rust_simulator);
 
 exports.handler = async function (event, context) {
     try {

@@ -3,4 +3,4 @@
     external_node_modules = ["web-worker"]
 
 [functions.simulate]
-  included_files = ["rust-assets/**", "pkg/**"]
+  included_files = ["./rust-assets/**", "./pkg/**"]
