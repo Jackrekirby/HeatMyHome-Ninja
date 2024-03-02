@@ -1,6 +1,6 @@
-# HeatNinja-Netlify
+# HeatMyHome.ninja (rehosted)
 
-This repository is a recreation of the original hosted from https://github.com/heatmyhome-ninja. Maintaince of the original website was dropped, so it was faithfully rebuilt here. The limitation of this version is simulations can only be run on the client, and not the server. See the new website below.
+This repository is a recreation of the original hosted from https://github.com/heatmyhome-ninja. Maintaince of the original website was dropped, so it was faithfully rebuilt by myself, one of the original developers. The limitation of this version is simulations can only be run on the client, and not the server. See the new website below.
 
 https://heatmyhome.netlify.app
 
